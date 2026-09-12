@@ -65,7 +65,6 @@
 
     trackball_central: trackball_central@0 {
         status = "okay";
-        scroll-layers = <2>;
 #ifdef CONFIG_TRACKBALL_PAW3222
         compatible = "pixart,paw3222";
         reg = <0>;
@@ -103,6 +102,7 @@
     y-codes = <INPUT_REL_Y>;
     xy-to-scroll-enabled;
     active-layers = <0x000000C0>; /* layer6 + layer7 */
+    scroll-layers = <2>;
     scale-multiplier = <1>;
     scale-divisor = <1>;   /* Studio UI の倍率がそのまま実効値 (1.0x基準)。固定減速は listener 側 zip_scroll_scaler */
 };

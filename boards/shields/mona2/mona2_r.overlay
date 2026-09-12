@@ -86,7 +86,6 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <600>;
         evt-type = <INPUT_EV_REL>;
-        invert-y; //COROPIT版 Y軸反転
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         /* DYA Studio 上でこのセンサーを識別するための短い ID */

@@ -86,6 +86,7 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <600>;
         evt-type = <INPUT_EV_REL>;
+        invert-y; //COROPIT版 Y軸反転
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         /* DYA Studio 上でこのセンサーを識別するための短い ID */
@@ -104,7 +105,6 @@
     active-layers = <4>; /* layer2 */
     scale-multiplier = <8>;
     scale-divisor = <1>;   /* Studio UI の倍率がそのまま実効値 (1.0x基準)。固定減速は listener 側 zip_scroll_scaler */
-    invert-y; //COROPIT版 Y軸反転
 };
 
 &mouse_runtime_input_processor {

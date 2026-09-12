@@ -65,6 +65,7 @@
 
     trackball_central: trackball_central@0 {
         status = "okay";
+        scroll-layers = <2>;
 #ifdef CONFIG_TRACKBALL_PAW3222
         compatible = "pixart,paw3222";
         reg = <0>;

@@ -30,6 +30,11 @@
     acceleration-exponent = <0>;
 };
 
+&mkp_input_listener {
+    // マウスキーを押したらAMLを500ms延長
+    input-processors = <&zip_temp_layer 1 500>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
